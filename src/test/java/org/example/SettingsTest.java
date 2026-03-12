@@ -22,13 +22,10 @@ public class SettingsTest {
 
     private AndroidDriver driver;
 
-    // --- הגדרת האלמנטים הסטטיים ברמת המחלקה ---
 
     @AndroidFindBy(id = "com.android.settings:id/search_action_bar")
     private WebElement searchBar;
 
-    // שני העמודים (System ו-About) משתמשים באותו ID עבור הכותרת העליונה שלהם
-    // לכן מספיק להגדיר אלמנט אחד שישמש אותנו לבדיקה בשני המקרים
     @AndroidFindBy(id = "com.android.settings:id/collapsing_toolbar")
     private WebElement collapsingToolbarHeader;
 
